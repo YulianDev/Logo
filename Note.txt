@@ -1,0 +1,7 @@
+Used:
+1) reset.css;
+2) slick-slider (https://kenwheeler.github.io/slick/): slick.scss themes and slick.js;
+3) gulp-autoprefixer
+
+Gilroy font is paid and I didn't find any attached fonts. 
+Therefore was used "Signika" font, which is similar to Gilroy.
