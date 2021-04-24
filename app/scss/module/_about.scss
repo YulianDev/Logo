@@ -1,0 +1,59 @@
+.about {
+    padding: 145px 0 190px;
+    background-image: url('../images/content/about/photo1.jpg');
+    background-position: left 0;
+    background-repeat: no-repeat;
+    background-size: 40% 100%;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 600px;
+        height: 510px;
+        bottom: -175px;
+        right: 0px;
+        background-image: url('../images/content/about/plan.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__inner {
+        max-width: 550px;
+        width: 100%;
+        padding-right: 90px;
+        margin-left: auto;
+        position: relative;
+    }
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+    &__title {
+        color: #000;
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: #7C7C7C;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__experience {
+        position: absolute;
+        display: block;
+        padding: 15px 40px 30px 25px;
+        font-size: 30px;
+        line-height: 42px;
+        background-color: #FFB800;
+        width: 240px;
+        height: 220px;
+        left: -86%;
+        bottom: -42%;
+    }
+    &__year {
+        font-size: 70px;
+        line-height: 97px;
+        @extend %playDis-400;
+    }
+}

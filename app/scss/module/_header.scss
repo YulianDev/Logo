@@ -1,0 +1,193 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../images/content/header/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 2s;
+}
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform .6s, opacity .6s;
+    z-index: 100;
+    &.hide {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    &.active {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+.header-contact {
+    padding: 16px 0 13px;
+    background-color: rgba(0, 0, 0, 0.31);
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__phones {
+        margin-right: 100px;
+    }
+    &__phone-link {
+        margin-right: 50px;
+        font-size: 16px;
+        line-height: 18px;
+        @extend %signika-500;
+        color: $defaultColor;
+        letter-spacing: 0.01px;
+        transition: color 0.6s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $accentColor;
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+    &__social-link {
+        width: 18px;
+        height: 18px;
+        margin-right: 22px;
+        svg path {
+            transition: fill 0.6s;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover svg path {
+            fill: $accentColor;
+        }
+    }
+    &__social-img {
+        width: 18px;
+        height: 18px;
+        object-fit: cover;
+    }
+}
+.header-menu {
+    padding: 30px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__callback-link {
+        display: inline-block;
+        font-size: 16px;
+        @extend %signika-700;
+        color: $accentColor;
+        padding: 10px 17px;
+        border: 2px solid $accentColor;
+        cursor: pointer;
+        transition: color 0.6s, background-color 0.6s;
+        &:hover {
+            color: $defaultColor;
+            background-color: $accentColor;
+        }
+    }
+    &.active {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $defaultColor;
+        }
+    }
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    &__inner {
+        max-width: 770px;
+        width: 100%;
+        margin: auto;
+    }
+    &__title {
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    &__text {
+        margin-bottom: 60px;
+        padding: 0 15px;
+    }
+    &__link {
+        padding: 15px 20px 15px 20px;
+        margin-left: 15px;
+        color: $defaultColor;
+        font-size: 16px;
+        @extend %signika-700;
+        line-height: 19px;
+        letter-spacing: 0.01px;
+        background-color: $accentColor;
+        box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.32);
+        transition: transform 0.6s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.header-advantages {
+    padding: 40px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        max-width: 190px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 28px;
+        @extend %signika-600;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 92px;
+            height: 92px;
+            top: 0%;
+            right: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__item--business::after {
+        background-image: url('../images/icons/business-icon.svg');
+        top: -20px;
+        right: 18px;
+    }
+    &__item--money::after {
+        background-image: url('../images/icons/money-bag-icon.svg');
+        top: -20px;
+        right: 0;
+    }
+    &__item--report::after {
+        background-image: url('../images/icons/business-report-icon.svg');
+        top: -5px;
+        right: -40px;
+    }
+    &__item--fast::after {
+        background-image: url('../images/icons/fast-icon.svg');
+        top: -25px;
+        right: -20px;
+    }
+    &__item--guarantee::after {
+        background-image: url('../images/icons/guarantee-icon.svg');
+        top: -15px;
+        right: 15px;
+    }
+}

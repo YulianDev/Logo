@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Signika-Light';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Signika-Light'), 
+        url('../fonts/Signika-Light.woff2') format('woff2'),
+        url('../fonts/Signika-Light.woff') format('woff');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Signika-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Signika-Regular'), 
+        url('../fonts/Signika-Regular.woff2') format('woff2'),
+        url('../fonts/Signika-Regular.woff') format('woff');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Signika-Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Signika-Medium'), 
+        url('../fonts/Signika-Medium.woff2') format('woff2'),
+        url('../fonts/Signika-Medium.woff') format('woff');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Signika-SemiBold';
+    font-weight: 600;
+    font-style: normal;
+    src: local('Signika-SemiBold'), 
+        url('../fonts/Signika-SemiBold.woff2') format('woff2'),
+        url('../fonts/Signika-SemiBold.woff') format('woff');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Signika-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Signika-Bold'), 
+        url('../fonts/Signika-Bold.woff2') format('woff2'),
+        url('../fonts/Signika-Bold.woff') format('woff');
+        font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('PlayfairDisplay-Regular'), 
+        url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('PlayfairDisplay-Bold'), 
+        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+        font-display: swap;
+}

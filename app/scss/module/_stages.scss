@@ -1,0 +1,96 @@
+.stages {
+    padding: 60px 0 110px;
+    background-color: #000;
+    position: relative;
+    z-index: 0;
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+    &__title {
+        margin-bottom: 95px;
+    }
+    &__steps-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    &__steps-border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 139px;
+            height: 1px;
+            background-color: $defaultColor;
+            top: 50%;
+            right: -138px;
+            transform: translateY(-50%);
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+    &__steps-border:nth-child(1) {
+        background: linear-gradient(210deg, #FFB800 21%, transparent 0%);
+    }
+    &__steps-border:nth-child(2) {
+        background: linear-gradient(235deg, #FFB800 32%, transparent 0%);
+    }
+    &__steps-border:nth-child(3) {
+        background: linear-gradient(267deg, #FFB800 53%, transparent 0%);
+    }
+    &__steps-border:nth-child(4) {
+        background: linear-gradient(300deg, #FFB800 70%, transparent 0%);
+    }
+    &__steps-border:nth-child(5) {
+        background: linear-gradient(327deg, #FFB800 80%, transparent 0%);
+    }
+    &__steps-border:nth-child(6) {
+        background: linear-gradient(0deg, #FFB800 1000%, transparent 0%);
+    }
+    &__steps-num {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        line-height: 55px;
+        @extend %playDis-400;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #000;
+        color: $defaultColor;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 67px;
+            height: 67px;
+            border-radius: 50%;
+            background-color: $defaultColor;
+            top: -1px;
+            left: -1px;
+            z-index: -1;
+        }
+    }
+    &__steps-descr {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__steps-item {
+        max-width: 148px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 19px;
+        &:last-child {
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+
+@import 'fonts/fonts';
+@import 'global/vars';
+@import 'global/reset';
+@import 'global/global';
+@import 'tools/libs';
+@import 'tools/slick';
+@import 'module/same';
+@import 'module/header';
+@import 'module/about';
+@import 'module/stages';
+@import 'module/portfolio';
+@import 'module/reviews';
+@import 'module/contact';
+@import 'module/footer';
+@import 'media/media';
+
+.fade {
+    transition: all 2s;
+    background: #ccc;
+  }

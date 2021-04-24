@@ -1,0 +1,15 @@
+.header-advantages,
+.reviews__inner {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(26px);
+}
+
+.reviews,
+.contact {
+    &__inner {
+        max-width: 710px;
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}

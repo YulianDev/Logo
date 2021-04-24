@@ -1,0 +1,92 @@
+.portfolio {
+    padding: 100px 0 0;
+    color: #000;
+    background-image: url('../images/content/portfolio/bgplan.png');
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: 285px 402px;
+    &__info {
+        max-width: 495px;
+    }
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__project {
+        font-size: 24px;
+        line-height: 33px;
+        @extend %signika-600;
+        margin-bottom: 25px;
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__deadline,
+    &__area {
+        @extend %signika-700;   
+        span,
+        sup {
+            font-size: 20px;
+            line-height: 28px;
+            @extend %signika-400;
+        }
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 540px;
+        width: 100%;
+        height: 95px;
+        background-color: #FFB800;
+        margin-left: auto;
+    }
+    &__navigation-arrows {
+        max-width: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.portfolio-slider {
+    &__item {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1130px;
+        padding: 0 10px;
+        margin: 0 auto;
+        min-height: 615px;
+    }
+}
+
+.photo-slider {
+    display: flex;
+    position: relative;
+    top: 16px;
+    &__thumb {
+        margin-right: 5px;
+        height: 105px;
+        width: 100px;
+    }
+    &__thumb-img {
+        width: 100px;
+        height: 105px;
+        object-fit: cover;
+    }
+    &__big {
+        max-width: 540px;
+        width: 100%;
+    }
+    &__big-img {
+        width: 540px;
+        height: 590px;
+        object-fit: cover;
+    }
+}

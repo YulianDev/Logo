@@ -1,0 +1,126 @@
+.slick-arrow {
+    display: block;
+    position: relative;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    height: 28px;
+    width: 20px;
+    cursor: pointer;
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 4px;
+        border-radius: 10px;
+    }
+}
+.slick-next {
+    &::after {
+        top: 5px;
+        transform: rotate(45deg);
+    }
+    &::before {
+        bottom: 5px;
+        transform: rotate(-45deg);
+    }
+}
+.slick-prev {
+    &::after {
+        top: 5px;
+        transform: rotate(-45deg);
+    }
+    &::before {
+        bottom: 5px;
+        transform: rotate(45deg);
+    }
+}
+.slick-dots {
+    display: flex;
+    align-items: center;
+    li {
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    button {
+        font-size: 0;
+        width: 6px;
+        height: 6px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .slick-active button {
+        width: 9px;
+        height: 9px;
+    }
+} 
+
+.portfolio {
+    .slick-arrow {
+        &::after,
+        &::before {
+            background-color: $defaultColor;
+        }
+    }
+    .slick-dots {
+        button {
+            background-color: rgba(255, 255, 255, 0.45);
+            transition: background-color .6s;
+            &:hover {
+                background-color: $defaultColor;
+            }
+        }
+        .slick-active button {
+            background-color: $defaultColor;
+        }
+    }
+}
+
+.reviews {
+    .slick-arrow {
+        &::after,
+        &::before {
+            background-color: rgba(255, 255, 255, 0.63);
+            transition: background-color 0.6s;
+        }
+    }
+    .slick-arrow:hover {
+        &::after,
+        &::before {
+            background-color: $accentColor;
+        }
+    }
+
+    .slick-next,
+    .slick-prev {
+        position: absolute;
+        top: -7px;
+    }
+    .slick-next {
+        right: 35%;
+    }
+    .slick-prev {
+        left: 35%;
+    }
+
+    .slick-dots {
+        button {
+            background-color: rgba(196, 196, 196, 0.45);
+            transition: background-color .6s;
+            &:hover {
+                background-color: $accentColor;
+            }
+        }
+        .slick-active button {
+            background-color: $accentColor;
+        }
+    }
+}
